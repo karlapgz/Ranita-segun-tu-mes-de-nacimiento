@@ -6,6 +6,12 @@
 }
 
 body {
+    min-width: 320px;
+    min-height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #45B649;
 }
 
@@ -15,25 +21,33 @@ h1 {
 }
 
 select {
+    width: 130px;
+    padding: 2px;
     margin-top: 2rem;
     font-family: 'Roboto';
     font-size: 16px;
+    border-radius: 5px;
 }
 
 img {
+    width: 95%;
     max-width: 250px;
-    margin: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
 }
 
 .seccion {
-    width: 500px;
+    width: 85%;
+    max-width: 500px;
     height: 500px;
+    padding: 0 10px;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #DCE35B;
     border-radius: 30px;
 }
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+}
